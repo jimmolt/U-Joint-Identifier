@@ -1,0 +1,706 @@
+<title>U-Joint Identifier</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,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">
+<meta name="apple-mobile-web-app-title" content="U-Joint ID">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: caliper-readout inputs on top, ranked series cards below, numerals in mono like a gauge display. */
+:root {
+  --bg: #e9edf0;
+  --panel: #f9fbfc;
+  --field: #ffffff;
+  --ink: #151c22;
+  --muted: #566470;
+  --line: #c6cfd6;
+  --accent: #0d5c9e;
+  --accent-ink: #ffffff;
+  --good: #1b6f43;
+  --good-bg: #dbf0e4;
+  --warn: #7d5200;
+  --warn-bg: #faeecb;
+  --display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --body: "IBM Plex Sans", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #11171c; --panel: #192128; --field: #0e1317; --ink: #e6ebef; --muted: #93a1ad;
+    --line: #2d3943; --accent: #5aa9ee; --accent-ink: #08121b; --good: #72d29c; --good-bg: #163525;
+    --warn: #e8b04a; --warn-bg: #3a2c0e; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #11171c; --panel: #192128; --field: #0e1317; --ink: #e6ebef; --muted: #93a1ad;
+  --line: #2d3943; --accent: #5aa9ee; --accent-ink: #08121b; --good: #72d29c; --good-bg: #163525;
+  --warn: #e8b04a; --warn-bg: #3a2c0e; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink); font: 15px/1.5 var(--body);
+  padding-block: 24px 40px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.wrap { max-width: 860px; margin: 0 auto; display: grid; gap: 16px; }
+h1 { font: 700 34px/1 var(--display); letter-spacing: .02em; text-transform: uppercase; margin: 0; text-wrap: balance; }
+.sub { margin: 6px 0 0; color: var(--muted); max-width: 60ch; }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 16px; display: grid; gap: 14px; }
+.fields { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.field { display: grid; gap: 4px; min-width: 0; }
+label, .lbl { font: 600 12px/1.2 var(--display); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-size: 14px; }
+input[type="text"], select {
+  width: 100%; min-width: 0; background: var(--field); color: var(--ink); border: 1px solid var(--line);
+  border-radius: 4px; padding: 10px 12px; font: 500 22px/1.2 var(--mono); font-variant-numeric: tabular-nums;
+}
+select { font: 500 15px/1.2 var(--body); padding: 12px; }
+input:focus-visible, select:focus-visible, button:focus-visible, .seg input:focus-visible + span { outline: 2px solid var(--accent); outline-offset: 2px; }
+.row { display: flex; flex-wrap: wrap; gap: 12px; align-items: end; }
+.row > .field { flex: 1 1 180px; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; background: var(--field); }
+.seg label { margin: 0; cursor: pointer; }
+.seg input { position: absolute; opacity: 0; pointer-events: none; }
+.seg span { display: block; padding: 11px 20px; font: 600 16px/1.2 var(--display); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.seg input:checked + span { background: var(--accent); color: var(--accent-ink); }
+button { font: 600 15px/1.2 var(--body); border: 1px solid var(--line); background: var(--field); color: var(--ink); border-radius: 4px; padding: 12px 16px; cursor: pointer; }
+button:hover { border-color: var(--accent); }
+details { color: var(--muted); }
+summary { cursor: pointer; font-weight: 500; color: var(--accent); }
+details p { margin: 8px 0 0; max-width: 62ch; }
+details.others { margin-top: 16px; }
+details.others summary { margin-bottom: 8px; }
+.how { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; margin-top: 10px; }
+.how svg { width: 260px; max-width: 100%; height: auto; color: var(--ink); flex: none; }
+.how svg text { fill: var(--muted); font: 500 11px var(--mono); }
+.banner { background: var(--warn-bg); color: var(--warn); border-radius: 4px; padding: 8px 12px; font-size: 14px; }
+.banner[hidden] { display: none; }
+h2 { font: 700 20px/1.1 var(--display); letter-spacing: .08em; text-transform: uppercase; margin: 0 0 8px; display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+h2 small { font: 400 13px var(--body); letter-spacing: 0; text-transform: none; color: var(--muted); }
+.list { display: grid; gap: 8px; }
+.hit { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 12px 14px; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 20px; align-items: start; }
+.hit.best { border-color: var(--good); box-shadow: inset 4px 0 0 var(--good); }
+.hit h3 { font: 700 30px/1 var(--display); letter-spacing: .02em; margin: 0; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; overflow-wrap: anywhere; }
+.tag { font: 600 12px/1 var(--display); letter-spacing: .1em; text-transform: uppercase; background: var(--good-bg); color: var(--good); padding: 4px 7px; border-radius: 3px; }
+.parts { margin: 4px 0 0; color: var(--muted); font-size: 13.5px; overflow-wrap: anywhere; }
+.note { margin: 6px 0 0; background: var(--warn-bg); color: var(--warn); padding: 6px 8px; border-radius: 3px; font-size: 13px; max-width: 62ch; }
+.dims { display: flex; gap: 20px; margin: 0; }
+.dims div { min-width: 96px; }
+.dims dt { font: 600 13px/1.2 var(--display); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.dims dd { margin: 2px 0 0; font: 500 20px/1.2 var(--mono); font-variant-numeric: tabular-nums; }
+.dims small { display: block; font: 400 12px var(--mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+.deltas { grid-column: 1 / -1; display: flex; gap: 6px; flex-wrap: wrap; }
+.chip { font: 400 12.5px var(--mono); border: 1px solid var(--line); border-radius: 3px; padding: 2px 7px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.chip.ok { color: var(--good); border-color: var(--good); }
+.chip.off { color: var(--warn); border-color: var(--warn); }
+.empty { background: var(--panel); border: 1px dashed var(--line); border-radius: 6px; padding: 18px; color: var(--muted); }
+footer { color: var(--muted); font-size: 13px; max-width: 70ch; }
+footer a { color: var(--accent); }
+@media (max-width: 560px) {
+  .fields { grid-template-columns: 1fr; }
+  .hit { grid-template-columns: minmax(0, 1fr); }
+  .dims { justify-content: flex-start; }
+  h1 { font-size: 30px; }
+}
+@media (prefers-reduced-motion: no-preference) { button, input, select { transition: border-color .15s; } }
+</style>
+
+<main class="wrap">
+  <header>
+    <h1>U-Joint Identifier</h1>
+    <p class="sub">Measure the bearing cap diameter and the width across the caps. The series that fit show up below, closest first.</p>
+  </header>
+
+  <section class="panel" aria-label="Measurements">
+    <div class="fields">
+      <div class="field">
+        <label for="cap">Cap diameter</label>
+        <input id="cap" type="text" inputmode="decimal" autocomplete="off" spellcheck="false">
+      </div>
+      <div class="field">
+        <label for="across">Across caps</label>
+        <input id="across" type="text" inputmode="decimal" autocomplete="off" spellcheck="false">
+      </div>
+    </div>
+    <div class="row">
+      <div class="field">
+        <span class="lbl" id="unit-lbl">Units</span>
+        <div class="seg" role="radiogroup" aria-labelledby="unit-lbl">
+          <label for="unit-in"><input type="radio" name="unit" id="unit-in" value="in" checked><span>inch</span></label>
+          <label for="unit-mm"><input type="radio" name="unit" id="unit-mm" value="mm"><span>mm</span></label>
+        </div>
+      </div>
+      <div class="field">
+        <label for="tol">Match tolerance</label>
+        <select id="tol">
+          <option value="tight">Tight</option>
+          <option value="normal" selected>Normal</option>
+          <option value="loose">Loose</option>
+        </select>
+      </div>
+      <button type="button" id="clear">Clear</button>
+    </div>
+    <details>
+      <summary>How to measure</summary>
+      <div class="how">
+        <svg viewBox="0 0 260 110" role="img" aria-label="Cross with a cap on each end. Cap diameter is the outside width of one cap. Across caps is the full length from the outer end of one cap to the outer end of the opposite cap.">
+          <rect x="8" y="30" width="34" height="34" fill="none" stroke="currentColor" stroke-width="2"/>
+          <rect x="218" y="30" width="34" height="34" fill="none" stroke="currentColor" stroke-width="2"/>
+          <rect x="42" y="42" width="176" height="10" fill="none" stroke="currentColor" stroke-width="2"/>
+          <line x1="8" y1="86" x2="252" y2="86" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="8" y1="80" x2="8" y2="92" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="252" y1="80" x2="252" y2="92" stroke="currentColor" stroke-width="1.5"/>
+          <text x="130" y="104" text-anchor="middle">across caps</text>
+          <line x1="52" y1="30" x2="52" y2="64" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 3" opacity="0"/>
+          <line x1="2" y1="30" x2="2" y2="64" stroke="currentColor" stroke-width="1.5"/>
+          <text x="14" y="22">cap Ø</text>
+        </svg>
+        <p>Cap diameter is the outside diameter of one bearing cap. Across caps is the full length from the outer end of one cap to the outer end of the opposite cap. Fractions work too, like 1 3/16.</p>
+      </div>
+    </details>
+  </section>
+
+  <section id="results" aria-live="polite"></section>
+
+</main>
+
+<script>
+/* ---- Data: cap Ø groups, then series|part|vendor|across in|across mm|note ---- */
+const VENDORS = { DS: "Dana Spicer", WA: "Walterscheid", BP: "Bondioli & Pavesi", NEA: "Neapco", WEA: "Weasler", UJS: "U-Joint Store", ELBE: "Elbe" };
+const RAW = `
+#0.591 15.0
+473.10|473.10|GWB|1.614|41.0
+#0.630 16.0
+METRIC|TUS-70|UJS|1.555|39.5
+#0.631 16.0
+ATV-I|ATV700|Kawasaki|1.052|26.7
+#0.669 17.0
+ELBE 105|0.105.010|ELBE|1.614|41.0
+#0.671 17.0
+ATV-O|ATV203|Yamaha|1.575|40.0
+#0.709 18.0
+2000|041197W|WA|1.850|47.0
+#0.748 19.0
+METRIC|TUS-62|UJS|1.811|46.0
+ELBE 106|0.106.010|ELBE|1.890|48.0
+473.20||GWB|1.937|49.2
+#0.750 19.1
+ATV-I|ATV406|Suzuki|1.230|31.2
+ATV-I|ATV408|Suzuki|1.310|33.3
+Steering|1-0475|NEA|1.900|48.3
+#0.752 19.1
+JD1|TUS-JD1|John Deere|0.925|23.5
+ATV-O|ATV602|Arctic Cat|1.811|46.0
+#0.787 20.0
+190|41220|BP|1.969|50.0
+METRIC|TUS-71|UJS|1.988|50.5
+2055-AG|TUS-1|UJS|2.165|55.0
+METRIC|TUS-61|UJS|2.205|56.0
+METRIC|TUS-22|UJS|2.224|56.5
+METRIC|TUS-47|UJS|2.244|57.0
+Nissan B210 / F|5-1500X|DS|2.283|58.0
+#0.789 20.0
+ATV-I|ATV701|Kawasaki|1.260|32.0
+ATV-I|ATV401|Suzuki|1.284|32.6
+ATV-I|ATV402|Suzuki|1.335|33.9
+ATV-I|ATV403|Suzuki|1.350|34.3
+ATV-I|ATV407|Suzuki|1.430|36.3
+ATV-I|ATV903|Kubota|1.454|36.9
+ATV-I|ATV200|Yamaha|1.488|37.8
+ATV-I|ATV405|Suzuki|1.563|39.7
+ATV-I|ATV601|Arctic Cat|1.572|39.9
+ATV-I|ATV202|Yamaha|1.581|40.2
+ATV-O|ATV300|Honda|2.166|55.0
+ATV-O|ATV901|Mini-Truck|2.168|55.1
+#0.807 20.5
+Kubota|TUS-KOY1|UJS|2.228|56.6
+#0.827 21.0
+TOY-36mm lockup|TUS-RV4||2.008|51.0
+#0.839 21.3
+ATV-O|ATV506|Polaris|1.888|48.0
+#0.866 22.0
+ATV-I|ATV702|Kawasaki|1.351|34.3
+ATV-I|ATV404|Suzuki|1.425|36.2
+ATV-O|ATV501|Polaris|2.120|53.8
+ATV-O|ATV505|Polaris|2.260|57.4
+Mule|ATV702|Rockford|1.377|35.0
+Mitsubishi / CAT|9377100700|inside rings|1.535|39.0
+Kubota|40350139|Koyo|1.570|39.9
+ATV-I|TUS-2240||1.575|40.0
+SIZE 1 / SFT-S1|41201|BP|2.126|54.0
+2100|040116|WA|2.165|55.0
+ELBE 107|0.107.010|ELBE|2.283|58.0
+473.30|473.30|GWB|2.323|59.0
+SFT-S2 CV||BP|2.992|76.0
+SFT-S4 CV|4120E0051|BP|3.386|86.0
+#0.867 22.0
+ATV-O|ATV801|Can-Am|2.160|54.9
+#0.875 22.2
+1FR|200-0100|Domestic|2.933|74.5
+#0.886 22.5
+Nissan forklift|5-1514X|Dana|1.482|37.6
+#0.937 23.8
+ATV-I|ATV500|Polaris|1.496|38.0
+SIZE 2|41202|BP|2.413|61.3
+ELBE 403|0.403|ELBE|2.465|62.6
+#0.938 23.8
+1100|1-0300|DS|2.411|61.2
+1000|5-170X|Dana|1.500|38.1|The drive-lines table lists 1.500 in across caps for this series. Your chart has 2.3125 in (next entry). Measure yours to settle it.
+1000||your chart|2.313|58.7|From your chart. The drive-lines table lists 1.500 in for this series.
+#0.940 23.9
+ATV-I|ATV507|Polaris|1.565|39.8
+#0.945 24.0
+2200|044439|WA|2.402|61.0
+2280|367701|WA|2.402|61.0
+ATV-I|ATV703|Kawasaki|1.542|39.2
+#0.967 24.6
+Unknown|1-0061|NEA|2.460|62.5
+#0.969 24.6
+6 / 0600|200-0600|WEA|1.453|36.9
+#0.984 25.0
+Kubota axle IS|K7571-91320|Kubota|1.693|43.0
+Kawasaki ISR|ATV704|Rockford|1.732|44.0
+Samari|1-1557|NEA|2.559|65.0
+Mitsubishi|1-1516|NEA|3.031|77.0
+Kubota 59mm IR|70411-52100|Kubota|3.150|80.0
+#0.985 25.0
+ATV-I|ATV603|Arctic Cat|1.683|42.7
+ATV-I|ATV900|Kubota|1.693|43.0
+Kubota RTV900|ATV900|Rockford|1.693|43.0
+ATV-I|ATV704|Kawasaki|1.728|43.9
+ATV-I|ATV201|Yamaha|1.730|43.9
+ATV-I|ATV400|Suzuki|1.732|44.0
+ATV-I|ATV600|Arctic Cat|1.734|44.0
+I12|1-0027|PTI|1.734|44.0
+ATV-I|ATV902|Kubota|1.937|49.2
+ATV-I|ATV904|Kubota|1.968|50.0
+ATV-O|ATV802|Can-Am|2.518|64.0
+ATV-O|ATV800|Can-Am|2.550|64.8
+#1.000 25.4
+H10|NB10A|Buyers Products|2.000|50.8
+1110|1-0105|DS|2.200|55.9
+ATV-I|ATV503|Polaris|2.337|59.4
+1800 AG|1-1875X|NEA|3.125|79.4
+3DR|200-0300|WEA|3.937|100.0
+#1.024 26.0
+287.00||GWB|2.748|69.8
+TOY-23|2351-20|PTI|1.843|46.8
+#1.062 27.0
+12 / 1200|200-1200|WEA|1.812|46.0
+#1.063 27.0
+1210|1-0443|DS|2.438|61.9
+1310|5-785X|DS|3.250|82.6
+1310|1-0153|NEA|3.250|82.6
+ATV-I|ATV502|Polaris|1.817|46.2
+Kubota axle|TUS-RTVI|UJS|1.969|50.0
+SIZE 3|41203|BP|2.756|70.0
+WI|040127|WA|2.756|70.0
+Elbe 408|0.408.011.014|ELBE|2.762|70.2
+687.15||GWB|2.933|74.5
+2300|044444|WA|2.933|74.5
+SIZE 4|41204|BP|2.937|74.6
+2380|382701|WA|2.953|75.0
+Nissan Pathfinder|1-0449||3.346|85.0
+1330|5-790X|DS|3.625|92.1
+1330|2-4800|NEA|3.625|92.1
+SFT-S6 CV|4120G0051R30|BP|3.937|100.0
+SFT-H7CV|4120G0051|BP|3.937|100.0
+#1.066 27.1
+1330XC|2-4805|NEA|3.622|92.0
+Visteon staked|3-0488|NEA|3.787|96.2
+#1.078 27.4
+7260|1-6301|NEA|3.255|82.7
+#1.102 28.0
+ELBE 109 old|0.109.010.001|ELBE|2.815|71.5
+#1.122 28.5
+Toyota CV|1-5800|Toyota|2.777|70.5
+ELBE 109 new|0.109.011.201|ELBE|2.791|70.9
+#1.125 28.6
+14 / 2000|1-2075|NEA|2.625|66.7
+14 / 2000|200-1400|WEA|2.625|66.7
+3R|2-3147|GMC|3.625|92.1
+#1.126 28.6
+7290|2-1175|NEA|2.625|66.7
+#1.142 29.0
+Toyota Truck|1-1612|Toyota|2.400|61.0
+Willys|3-5600|NEA|2.936|74.6
+#1.181 30.0
+509|0.509.021.001|Elbe axle|3.110|79.0
+287.10||GWB|3.220|81.8
+ELBE 110|0.110.015|ELBE|3.268|83.0
+Mitsubishi Montero|9951-23|Mitsubishi|3.346|85.0
+#1.188 30.2
+1350|5-799X|DS|3.625|92.1
+1350|2-0053|NEA|3.625|92.1
+1410|5-801X|DS|4.125|104.8
+1410|2-0054|NEA|4.125|104.8
+AAM 1415|3-0415|NEA|4.178|106.1
+AAM 1415|74085339|American Axle|4.181|106.2
+#1.189 30.2
+SFT-S6|4120G0012|BP|3.126|79.4
+SIZE 5|41205|BP|3.150|80.0
+687.20||GWB|3.220|81.8
+BYP 240|41291 * 412910011|BP|3.413|86.7
+SFT-S7|4120H0012|BP|3.602|91.5
+SIZE 6|41206R|BP|3.622|92.0
+SIZE 6 CV|412060023|BP|3.913|99.4
+SFT-S8 CV|4120L0051R|BP|4.173|106.0
+SFT-S9 CV|4120M0052|BP|4.803|122.0
+#1.231 31.3
+5160 Detroit|2-1400|Detroit|2.500|63.5
+5380 Detroit|3-0056|Detroit|3.500|88.9
+#1.250 31.8
+35N / 2200|200-3501|WEA|3.219|81.8
+#1.251 31.8
+35N CV|200-3545|WEA|3.200|81.3
+35N / 2200|2-2275|NEA|3.219|81.8
+35N / 2200|200-3500|WEA|3.219|81.8
+#1.260 32.0
+2400|4242000|Benzi|2.992|76.0
+2400|312410|WA|2.992|76.0
+2480|342221|WA|2.992|76.0
+PW480|135077|WA|2.992|76.0
+Toyota Land Cruiser|2-0020|Toyota|3.200|81.3
+John Deere axle|||3.465|88.0
+#1.310 33.3
+44R|3-0044|WEA|2.797|71.0
+#1.339 34.0
+WII|040703|WA|3.543|90.0
+ELBE 112 old|0.112.010.001|ELBE|3.819|97.0
+#1.374 34.9
+687.25||GWB|3.622|92.0
+SFT-S8|4120L0012|BP|3.701|94.0
+SFT-S9|4120M0012|BP|4.173|106.0
+687.30||GWB|4.189|106.4
+SFT-SH CV|4120N0051|BP|4.409|112.0
+SPL55|5-803X|Dana|4.440|112.8
+#1.375 34.9
+AAM 1485WJ|3-0485|NEA|2.920|74.2
+Dana 60|SPL55-3X|Dana|3.050|77.5
+SPL70W|3-0157|NEA|3.780|96.0
+AAM 1485|74081485|American Axle|4.178|106.1
+AAM 1485|3-0486|NEA|4.178|106.1
+1480|5-803X|DS|4.188|106.4
+2600 Neapco Ag|3-0188|NEA|4.188|106.4
+1555|3-1555|American Axle|4.960|126.0
+1550|5-808X|DS|4.964|126.1
+SPL70|SPL70X|Dana|4.964|126.1
+AAM 1550|74081555|American Axle|4.965|126.1
+#1.378 35.0
+SIZE 7|41207|BP|3.701|94.0
+287.20|287.20|GWB|3.811|96.8
+John Deere|4129A|John Deere|3.811|96.8
+ELBE 112 new|0.112.015.001|ELBE|3.819|97.0
+CAT6 CV|204-6806|WEA|4.173|106.0
+SIZE 8|41208|BP|4.193|106.5
+SFT-H8|4120M0012|BP|4.193|106.5
+1355|3-0486|NEA|4.213|107.0
+#1.417 36.0
+2500|312209|WA|3.504|89.0
+2580|384316|WA|3.504|89.0
+PW580|116497|WA|3.504|89.0
+#1.496 38.0
+ELBE 113|0.113.010|ELBE|4.173|106.0
+#1.533 38.9
+55N CV|200-5556|WEA|3.720|94.5
+55N|3-0045|WEA|4.300|109.2
+#1.562 39.7
+1510|4225B|Dana|4.531|115.1
+#1.575 40.0
+ELBE 412|0.412|ELBE|4.157|105.6
+#1.614 41.0
+SIZE 9|41209|BP|4.252|108.0
+SIZE 10|41210|BP|4.646|118.0
+#1.625 41.3
+1350|s5-1350|Sonnax|3.625|92.1
+SPL100|SPL100-1X|Dana|4.957|125.9
+SPL90|4-1090|DS|4.957|125.9
+750N axle|CP750N|Meritor|5.064|128.6
+1650|1650|DS|5.590|142.0
+#1.654 42.0
+CVH|PT146533|Benzi|4.094|104.0
+2600|326245|WA|4.094|104.0
+2600 PRO|326245|WA|4.094|104.0
+587.15||GWB|4.114|104.5
+SFT-SH|4120N0012|BP|4.232|107.5
+ELBE 148|0.148.015|ELBE|4.626|117.5
+687.35||GWB|4.701|119.4
+SFT-SO|4120S0012|BP|5.118|130.0
+#1.690 42.9
+5C|4-5177|GKN|3.500|88.9
+6C|4-6128|MS|4.500|114.3
+#1.781 45.2
+77|201-7700|WEA|4.968|126.2
+#1.850 47.0
+BYP 700|41295|BP|5.205|132.2
+#1.875 47.6
+1610|4-0279|DS|5.312|134.9
+#1.882 47.8
+687.40||GWB|5.322|135.2
+#1.890 48.0
+587.20|587.20|GWB|4.587|116.5
+ELBE 158|0.158.015|ELBE|4.961|126.0
+#1.929 49.0
+SIZE 12|412200001|BP|5.315|135.0
+#1.936 49.2
+SPL140|SPL140X|DS|5.203|132.2|Your chart has 5.0203 in here. The drive-lines table has 5.203 in (132.2 mm), so the digits in your chart look swapped.
+#1.938 49.2
+850N|CP85N-4|Rockwell|5.934|150.7
+1710|5-0280|DS|6.094|154.8
+1760|6-0407|DS|7.000|177.8
+1810|6-0281|DS|7.547|191.7
+#1.940 49.3
+7C|5-7126|MS|4.620|117.3
+8C|6-8113|MS|6.880|174.8
+#1.969 50.0
+2700|377635|WA|4.646|118.0
+SK|4120K0001|BP|5.512|140.0
+#2.047 52.0
+587.30|587.30|GWB|5.236|133.0
+687.45||GWB|5.795|147.2
+#2.060 52.3
+RPL20||Meritor|7.000|177.8
+RPL25||Meritor|8.330|211.6
+#2.087 53.0
+2800|147712|WA|5.276|134.0
+ELBE 117|0.117.015|ELBE|5.315|135.0
+#2.155 54.7
+1850||DS|8.092|205.5
+#2.165 55.0
+SPL170|SPL170X|DS|6.535|166.0
+#2.188 55.6
+1880|5-308X|DS|8.094|205.6
+#2.244 57.0
+587.35/36||GWB|5.669|144.0
+ELBE 120|0.120.015|ELBE|5.984|152.0
+687.55||GWB|5.984|152.0
+587.42||GWB|5.987|152.1
+#2.312 58.7
+1800 truck|6-0124|DS|6.594|167.5
+#2.323 59.0
+687.60||GWB|6.602|167.7
+#2.362 60.0
+SPL250|SPL250X|DS|6.496|165.0
+#2.450 62.2
+RPL35|CP35RPLS|Meritor|6.875|174.6
+#2.559 65.0
+190.50||GWB|5.630|143.0
+SPL350|SPL350X|DS|6.772|172.0
+ELBE 122|0.122.015|ELBE|6.772|172.0
+587.48||GWB|6.772|172.0
+687.65|687.65|GWB|6.772|172.0
+#2.810 71.4
+8.5C|6-8516|GKN|4.880|124.0
+9C|6-9016|MS|6.620|168.1
+#2.835 72.0
+587.50||GWB|7.283|185.0
+#2.913 74.0
+190.55||GWB|6.063|154.0
+587.55||GWB|8.543|217.0
+#3.268 83.0
+390.60||GWB|5.079|129.0
+392.55|392.55|MS|5.472|139.0
+190.60||GWB|6.890|175.0
+587.60|2110-84-30/03|MS|9.110|231.4
+#3.500 88.9
+11C|3-76971|MS|6.800|172.7
+#3.620 91.9
+10C|03078325|MS|6.500|165.1
+12C|5-12211X|MS|9.500|241.3
+#3.740 95.0
+390.65||GWB|5.472|139.0
+190.65||GWB|7.480|190.0
+#3.940 100.1
+15C|03076938|MS|7.870|199.9
+#4.331 110.0
+390.70||GWB|6.299|160.0
+190.70||GWB|8.268|210.0
+#4.724 120.0
+390.75||GWB|6.929|176.0
+190.75||GWB|9.252|235.0
+#5.118 130.0
+390.80||GWB|7.717|196.0
+190.80||GWB|10.315|262.0
+`;
+
+/* ---- Logic ---- */
+const TOL = { tight: { in: 0.010, mm: 0.25 }, normal: { in: 0.030, mm: 0.8 }, loose: { in: 0.060, mm: 1.5 } };
+
+/* Series from the U Joint Chart spreadsheet: [series name, cap in, across caps in]. These are listed first. */
+const MINE = [
+  ["6 / 0600", 0.969, 1.453], ["12 / 1200", 1.062, 1.812], ["14 / 2000", 1.125, 2.625],
+  ["35N / 2200", 1.250, 3.219], ["44R", 1.310, 2.797], ["55N", 1.533, 4.300],
+  ["2200", 0.945, 2.402], ["2300", 1.063, 2.933], ["2400", 1.260, 2.992], ["2500", 1.417, 3.504], ["2600", 1.654, 4.094],
+  ["SIZE 5", 1.189, 3.150], ["SIZE 6", 1.189, 3.622], ["SIZE 7", 1.378, 3.701],
+  ["SIZE 8", 1.378, 4.193], ["SIZE 9", 1.614, 4.252], ["SIZE 10", 1.614, 4.646],
+  ["1000", 0.938, 2.313], ["1100", 0.938, 2.411], ["1310", 1.063, 3.250], ["1350", 1.188, 3.625],
+  ["1410", 1.188, 4.125], ["1480", 1.375, 4.188], ["1610", 1.875, 5.312], ["1710", 1.938, 6.094],
+  ["1760", 1.938, 7.000], ["1810", 1.938, 7.547], ["1880", 2.188, 8.094],
+  ["SPL90", 1.625, 4.957], ["SPL100", 1.625, 4.957], ["SPL140", 1.936, 5.203],
+  ["SPL170", 2.165, 6.535], ["SPL250", 2.362, 6.496], ["SPL350", 2.559, 6.772]
+];
+
+function parseNum(s) {
+  s = String(s == null ? "" : s).trim();
+  if (!s) return null;
+  let m = s.match(/^(\d+)?[\s-]*(\d+)\s*\/\s*(\d+)$/);
+  if (m && +m[3] !== 0) return (m[1] ? +m[1] : 0) + (+m[2]) / (+m[3]);
+  if (!/^\d*\.?\d+$/.test(s)) return NaN;
+  return parseFloat(s);
+}
+
+function buildGroups(raw) {
+  const map = new Map();
+  let capIn = 0, capMm = 0;
+  raw.split("\n").forEach(function (line) {
+    line = line.trim();
+    if (!line) return;
+    if (line[0] === "#") {
+      const p = line.slice(1).split(" ");
+      capIn = parseFloat(p[0]); capMm = parseFloat(p[1]);
+      return;
+    }
+    const f = line.split("|");
+    const lenIn = parseFloat(f[3]), lenMm = parseFloat(f[4]);
+    const key = f[0] + "|" + capMm + "|" + lenMm + "|" + capIn;
+    let g = map.get(key);
+    if (!g) {
+      g = { series: f[0], capIn: capIn, capMm: capMm, lenIn: lenIn, lenMm: lenMm, parts: [], notes: [] };
+      map.set(key, g);
+    }
+    const vendor = VENDORS[f[2]] || f[2] || "";
+    g.parts.push({ part: f[1] || "", vendor: vendor });
+    if (f[5] && g.notes.indexOf(f[5]) < 0) g.notes.push(f[5]);
+  });
+  const out = Array.from(map.values());
+  out.forEach(function (g) {
+    g.mine = MINE.some(function (m) {
+      return m[0] === g.series && Math.abs(m[1] - g.capIn) <= 0.005 && Math.abs(m[2] - g.lenIn) <= 0.005;
+    });
+  });
+  return out;
+}
+
+function search(groups, unit, cap, len, tol) {
+  const k = unit === "in" ? "In" : "Mm";
+  const eps = 1e-6;
+  const all = groups.map(function (g) {
+    const dc = cap == null ? null : Math.abs(g["cap" + k] - cap);
+    const dl = len == null ? null : Math.abs(g["len" + k] - len);
+    return {
+      g: g, dc: dc, dl: dl,
+      okc: dc == null || dc <= tol + eps,
+      okl: dl == null || dl <= tol + eps,
+      score: (dc || 0) + (dl || 0)
+    };
+  });
+  const byScore = function (a, b) { return a.score - b.score; };
+  const matches = all.filter(function (r) { return r.okc && r.okl; }).sort(byScore);
+  const mineMatches = matches.filter(function (r) { return r.g.mine; });
+  const otherMatches = matches.filter(function (r) { return !r.g.mine; });
+  let near = [];
+  if (cap != null && len != null) {
+    near = all.filter(function (r) { return r.g.mine && r.okc !== r.okl; })
+      .sort(function (a, b) { return (a.okc ? a.dl : a.dc) - (b.okc ? b.dl : b.dc); })
+      .slice(0, 6);
+  }
+  const closest = mineMatches.length ? [] : all.filter(function (r) { return r.g.mine; }).sort(byScore).slice(0, 3);
+  return { matches: matches, mineMatches: mineMatches, otherMatches: otherMatches, near: near, closest: closest };
+}
+
+if (typeof module !== "undefined") module.exports = { parseNum, buildGroups, search, RAW, TOL };
+
+/* ---- UI ---- */
+if (typeof document !== "undefined") (function () {
+  const groups = buildGroups(RAW);
+  const $ = function (id) { return document.getElementById(id); };
+  const capEl = $("cap"), acrossEl = $("across"), tolEl = $("tol"), resEl = $("results");
+  let unit = "in";
+  let othersOpen = false;
+  resEl.addEventListener("toggle", function (e) {
+    const t = e.target;
+    if (t && t.classList && t.classList.contains("others") && t.dataset.auto !== "1") othersOpen = t.open;
+  }, true);
+
+  const esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
+  const fmt = function (v, u) { return u === "in" ? v.toFixed(3) : v.toFixed(1); };
+
+  function partsText(g) {
+    const items = g.parts.filter(function (p) { return p.part || p.vendor; }).map(function (p) {
+      return esc(p.part) + (p.part && p.vendor ? " &middot; " : "") + esc(p.vendor);
+    });
+    if (!items.length) return "No part number listed";
+    return items.slice(0, 3).join(" &nbsp;/&nbsp; ") + (items.length > 3 ? " &nbsp;+" + (items.length - 3) + " more" : "");
+  }
+
+  function card(r, opts) {
+    const g = r.g, other = unit === "in" ? "mm" : "in";
+    const k = unit === "in" ? "In" : "Mm", o = unit === "in" ? "Mm" : "In";
+    const chips = [];
+    if (r.dc != null) chips.push('<span class="chip ' + (r.okc ? "ok" : "off") + '">' + (r.dc < 0.0005 ? "cap exact" : "cap off " + fmt(r.dc, unit)) + "</span>");
+    if (r.dl != null) chips.push('<span class="chip ' + (r.okl ? "ok" : "off") + '">' + (r.dl < 0.0005 ? "across exact" : "across off " + fmt(r.dl, unit)) + "</span>");
+    return '<article class="hit' + (opts.best ? " best" : "") + '">' +
+      '<div><h3>' + esc(g.series) + (opts.best ? '<span class="tag">Closest</span>' : "") + "</h3>" +
+      '<p class="parts">' + partsText(g) + "</p>" +
+      g.notes.map(function (n) { return '<p class="note">' + esc(n) + "</p>"; }).join("") + "</div>" +
+      '<dl class="dims"><div><dt>Cap &Oslash;</dt><dd>' + fmt(g["cap" + k], unit) + " " + unit + "</dd><small>" + fmt(g["cap" + o], other) + " " + other + "</small></div>" +
+      "<div><dt>Across caps</dt><dd>" + fmt(g["len" + k], unit) + " " + unit + "</dd><small>" + fmt(g["len" + o], other) + " " + other + "</small></div></dl>" +
+      (chips.length ? '<div class="deltas">' + chips.join("") + "</div>" : "") + "</article>";
+  }
+
+  function render() {
+    const cap = parseNum(capEl.value), len = parseNum(acrossEl.value);
+    const tolKey = tolEl.value, tol = TOL[tolKey][unit];
+    if ((cap !== null && isNaN(cap)) || (len !== null && isNaN(len))) {
+      resEl.innerHTML = '<div class="empty">One of the measurements is not a number. Use a decimal like 1.188 or a fraction like 1 3/16.</div>';
+      return;
+    }
+    if (cap === null && len === null) {
+      resEl.innerHTML = '<div class="empty">Enter a cap diameter, an across-caps length, or both. ' + groups.filter(function (g) { return g.mine; }).length + " series from your chart and " + groups.filter(function (g) { return !g.mine; }).length + " others are loaded.</div>";
+      return;
+    }
+    const res = search(groups, unit, cap, len, tol);
+    let html = "";
+    const tolLabel = "&plusmn;" + (unit === "in" ? tol.toFixed(3) : tol.toFixed(2)) + " " + unit;
+    const mine = res.mineMatches, other = res.otherMatches;
+    if (mine.length) {
+      html += "<h2>Your series <small>" + mine.length + " within " + tolLabel + "</small></h2>";
+      html += '<div class="list">' + mine.slice(0, 20).map(function (r, i) { return card(r, { best: i === 0 }); }).join("") + "</div>";
+    } else {
+      html += '<div class="empty">None of the series from your chart are within ' + tolLabel + ". Check the measurement outside edge to outside edge, or try Loose." + (other.length ? " Other series that fit are listed below." : "") + "</div>";
+      if (res.closest.length) html += '<h2 style="margin-top:16px">Nearest of yours</h2><div class="list">' + res.closest.map(function (r) { return card(r, {}); }).join("") + "</div>";
+    }
+    if (other.length) {
+      const auto = !mine.length;
+      html += '<details class="others" data-auto="' + (auto ? "1" : "0") + '"' + (auto || othersOpen ? " open" : "") + "><summary>Other series that fit (" + other.length + ")</summary>" +
+        '<div class="list">' + other.slice(0, 20).map(function (r) { return card(r, {}); }).join("") + "</div>" +
+        (other.length > 20 ? '<p class="sub">Showing the closest 20. Tighten the tolerance to narrow the list.</p>' : "") + "</details>";
+    }
+    if (res.near.length) {
+      html += '<h2 style="margin-top:20px">One size fits, one does not <small>cap or length matches, the other is off</small></h2>';
+      html += '<div class="list">' + res.near.map(function (r) { return card(r, {}); }).join("") + "</div>";
+    }
+    resEl.innerHTML = html;
+  }
+
+  function onInput() { render(); }
+  capEl.addEventListener("input", onInput);
+  acrossEl.addEventListener("input", onInput);
+  tolEl.addEventListener("change", render);
+  document.querySelectorAll('input[name="unit"]').forEach(function (r) {
+    r.addEventListener("change", function () {
+      const next = r.value;
+      if (!r.checked || next === unit) return;
+      [capEl, acrossEl].forEach(function (el) {
+        const v = parseNum(el.value);
+        if (v !== null && !isNaN(v)) el.value = next === "mm" ? (v * 25.4).toFixed(1) : (v / 25.4).toFixed(3);
+      });
+      unit = next;
+      render();
+    });
+  });
+  $("clear").addEventListener("click", function () {
+    capEl.value = ""; acrossEl.value = ""; render(); capEl.focus();
+  });
+
+  render();
+})();
+</script>
